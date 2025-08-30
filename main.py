@@ -5,7 +5,7 @@ import threading
 import argparse
 import os
 
-version = "v0.2"
+version = "v0.3"
 
 def main():
     global current_hotkey
