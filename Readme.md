@@ -4,7 +4,7 @@ VRChatのマイクミュートと，Discordのマイクミュートを連携さ�
 # クイックスタートガイド
 1. VRChatでOSCを有効にする。
 2. Discordにミュート切り替えのキー割り当て(Ctrl+Shift+Alt+M)を設定する。
-3. このソフトウェア起動する。(ダウンロード先-> こちら)
+3. このソフトウェア起動する。(ダウンロード先-> [こちら](https://github.com/0E7E/vrc_discord_mute_sync/releases/download/v0.2/vrc_discord_mute_sync_v0.2.exe))
 
 これで動作します。  
 VRchatのミュートを切り替えるたびに，Discordのミュートも切り替えるので，最初にMute状態を調整する必要があります。
@@ -39,7 +39,7 @@ VRchatのミュートを切り替えるたびに，Discordのミュートも切�
 別のショートカットを設定したい場合は後述の説明を読んでください。
 
 # 3.このソフトウェアを起動する
-1. 実行ファイル(.exe)をダウンロードする
+1. 実行ファイル(.exe)を[ダウンロード](https://github.com/0E7E/vrc_discord_mute_sync/releases/download/v0.2/vrc_discord_mute_sync_v0.2.exe)する
 2. 実行する (インストール不要です！)
 
 ![App画面](./readme_pic/30_app.png)
