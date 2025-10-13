@@ -5,7 +5,7 @@ import threading
 import argparse
 import os
 
-version = "v0.3"
+version = "v0.4"
 
 def main():
     global current_hotkey
@@ -26,7 +26,7 @@ def gui_setup():
     global root
 
     root = tk.Tk()
-    root.title("VRchat_Discord_Mute_Sync "+version)
+    root.title("VRChat_Discord_Mute_Link "+version)
     #root.iconbitmap("icon.ico")
     icon_path = os.path.join(os.path.dirname(__file__), "icon.ico")
     root.iconbitmap(icon_path)
