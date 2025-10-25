@@ -47,7 +47,7 @@ VRchatのミュートを切り替えるたびに，Discordのミュートも切�
 別のショートカットを設定したい場合は後述の説明を読んでください。
 
 # 3.このソフトウェアを起動する
-1. 実行ファイル(vrc_discord_mute_sync_XX.exe)を[ダウンロード][releaseURL]する。
+1. 実行ファイル(vrc_discord_mute_link.exe)を[ダウンロード][releaseURL]する。
 2. 実行する。 (インストール不要です！)
 
 ![App画面](./readme_pic/30_app.png)
@@ -65,8 +65,8 @@ Window内の入力欄に設定したいショートカットを入力して，�
 
 Ctrl+Alt+Nを設定したいときの例
 
-> vrc_discord_mute_sync.exe --hotkey Ctrl+Alt+N
+> vrc_discord_mute_link.exe --hotkey Ctrl+Alt+N
 
 ![ショートカット](./readme_pic/shortcut.png)
 
-[releaseURL]: <https://github.com/0E7E/vrc_discord_mute_sync/releases>
+[releaseURL]: <https://github.com/0E7E/vrc_discord_mute_link/releases>
