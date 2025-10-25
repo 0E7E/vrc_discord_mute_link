@@ -7,6 +7,8 @@ import os
 
 version = "v0.4"
 
+previous_state = None
+
 def main():
     global current_hotkey
 
@@ -61,6 +63,11 @@ def osc_server_setup():
 
 def mute_state_handler(address, *args): #MuteSelfを受け取った時の関数
     state = args[0]
+    global previous_state
+
+    if previous_state == state: #状態が変化したときのみ
+        return
+
     if state == 1.0:
         status_text = "ミュート有効"
         color = "red"
@@ -75,6 +82,8 @@ def mute_state_handler(address, *args): #MuteSelfを受け取った時の関数
         print(f"不明な値: {state}")
         print("VRChat mic mute unknown")
         color ="gray"
+
+    previous_state = state
 
     root.after(0, lambda: label_mute_status.config(text=f"VRChatミュート状態: {status_text}", fg=color))
 
