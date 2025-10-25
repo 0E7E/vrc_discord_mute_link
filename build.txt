@@ -1,1 +1,1 @@
- python -m PyInstaller  main.py --onefile --noconsole --icon=icon.ico --add-data "icon.ico;." --name vrc_discord_mute_sync.exe 
+ python -m PyInstaller  main.py --onefile --noconsole --icon=icon.ico --add-data "icon.ico;." --name vrc_discord_mute_link.exe 
