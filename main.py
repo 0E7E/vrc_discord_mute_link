@@ -1,11 +1,14 @@
 from pythonosc import dispatcher, osc_server
 import keyboard
 import tkinter as tk
+from tkinter import font
 import threading
 import argparse
 import os
+from tktooltip import ToolTip
+import webbrowser
 
-version = "v0.5"
+version = "v0.6"
 
 previous_state = None
 
@@ -34,22 +37,33 @@ def gui_setup():
     root.iconbitmap(icon_path)
     root.minsize(340, 120)
 
-    global entry
     tk.Label(root, text="Discordのミュートショートカットを入力").pack()
+    
+    global entry
     entry = tk.Entry(root)
     entry.insert(0, current_hotkey)
     entry.pack()
 
-    global label_status
     tk.Button(root, text="設定", command=set_hotkey).pack()
+    
+    global label_status
     label_status = tk.Label(root, text=f"設定済み: {current_hotkey}", width=30, anchor="w")
     label_status.pack()
-
+    ToolTip(label_status,msg="Discrodのショートカットに同じキーコンフィグを設定してください")
+    
     global label_mute_status
     label_mute_status = tk.Label(root, text="VRChatミュート状態: 不明", width=30, anchor="w")
     label_mute_status.pack()
 
-    
+    link_font = font.Font(root, family="Segoe UI", size=10, underline=1)
+    global label_url
+    label_url = tk.Label(root, text="GitHub URL", fg="blue", cursor="hand2", font=link_font)
+    label_url.pack(anchor="e",padx=10, pady=5)
+    label_url.bind("<Button-1>",open_url)
+
+
+def open_url(event):
+    webbrowser.open("https://github.com/0E7E/vrc_discord_mute_link")
 
 def osc_server_setup():
     disp = dispatcher.Dispatcher()
