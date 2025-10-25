@@ -5,7 +5,7 @@ import threading
 import argparse
 import os
 
-version = "v0.4"
+version = "v0.5"
 
 previous_state = None
 
